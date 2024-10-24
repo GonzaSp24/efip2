@@ -1,0 +1,26 @@
+/* Estilos personalizados */
+body {
+  font-family: 'Arial', sans-serif; /* Tipografía general */
+}
+
+.box {
+  background-color: #F9F9F9; /* Fondo claro para el box */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.hero.is-info {
+  background-color: #3498db; /* Color de fondo de la sección hero */
+}
+
+.button.is-danger {
+  background-color: #d9534f; /* Color del botón */
+}
+
+.button.is-danger:hover {
+  background-color: #c9302c; /* Color del botón al pasar el mouse */
+}
+
+/* Espaciado superior */
+.mt-5 {
+  margin-top: 3rem !important; /* Aumentar margen superior */
+}

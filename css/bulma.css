@@ -1,0 +1,32 @@
+
+@import url('https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css');
+
+
+body .custom-rounded {
+    border-radius: 8px;
+}
+
+body .has-background-primary-05.has-text-primary-05-invert {
+    background-color: rgba(48, 131, 175, 0.05); /* Fondo */
+    color: #05A6D6; /* Texto invertido */
+}
+
+
+.form-container {
+    max-width: 400px; 
+    margin: auto; 
+    padding: 20px; 
+}
+
+.navbar-item .buttons {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+
+
+
+

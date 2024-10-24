@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bulma.css">
+    <style>
+        /* Estilos para dividir el body en dos secciones */
+        .split-container {
+            display: flex;
+            height: calc(100vh - 80px); /* Ajustar altura del contenedor */
+            margin-top: 20px; /* Espacio superior */
+        }
+
+        .left-section {
+            flex: 1; /* Ocupa la mitad izquierda */
+            background-color: #E3F2FD; /* Color de fondo */
+            padding: 20px; /* Espaciado interno */
+            position: relative; /* Para posicionar el fondo */
+        }
+
+        .right-section {
+            flex: 1; /* Ocupa la mitad derecha */
+            background-color: #FFFFFF; /* Color de fondo */
+            padding: 20px; /* Espaciado interno */
+            overflow-y: auto; /* Habilita el desplazamiento si es necesario */
+        }
+
+        /* Estilos para el widget */
+        .widget {
+            background-color: #F9F9F9; /* Fondo claro para el widget */
+            border-radius: 8px; /* Bordes redondeados */
+            padding: 20px; /* Espaciado interno */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            margin-top: 20px; /* Espacio superior */
+        }
+
+        .widget-title {
+            font-size: 1.5rem; /* Tamaño de fuente */
+            margin-bottom: 15px; /* Espacio inferior */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img src="img/Sin título-1.png" alt="Logo de Agencia de Viajes" style="max-height: 80px;">
+          </a>  
+          
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="toggleBurger()">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="#" class="navbar-item has-text-white">Destinos</a>
+                <a href="#" class="navbar-item has-text-white">Hoteles</a>
+                <a href="#" class="navbar-item has-text-white">Vehículos</a>
+                <a href="#" class="navbar-item has-text-white">Pagos</a>
+                <a href="#" class="navbar-item has-text-white">Info Turística</a>
+                <a href="#" class="navbar-item has-text-white">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero is-primary is-small">
+      <div class="hero-body">
+          <div class="container has-text-centered">
+              <h2 class="title is-2">Explora el mundo con nosotros</h2>
+              <p class="subtitle is-4">Encuentra los mejores destinos, hoteles y vehículos para tu próximo viaje.</p>
+              <a href="#" class="button is-danger is-large">¡Reserva Ahora!</a>
+          </div>
+      </div>
+    </section>
+
+    <!-- Sección dividida -->
+    <div class="split-container">
+        <!-- Sección Izquierda -->
+        <div class="left-section">
+            <h2 class="title is-4">Contenido Principal</h2>
+            <p>Aquí puedes agregar más contenido sobre tus viajes, destinos, ofertas, etc.</p>
+            <ul class="tabs">
+              <li>
+                  <a id="tab1" title="Analytics" href="#tab1">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                          viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M3 3v18h18"></path>
+                          <path d="M20 18v3"></path>
+                          <path d="M16 16v5"></path>
+                          <path d="M12 13v8"></path>
+                          <path d="M8 16v5"></path>
+                          <path d="M3 11c6 0 5 -5 9 -5s3 5 9 5"></path>
+                      </svg>
+                      Analytics
+                  </a>
+              </li>
+              <li>
+                  <a id="tab2" title="Reports" href="#tab2">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                          viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M7 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                          <path d="M7 3v4h4"></path>
+                          <path d="M9 17l0 4"></path>
+                          <path d="M17 14l0 7"></path>
+                          <path d="M13 13l0 8"></path>
+                          <path d="M21 12l0 9"></path>
+                      </svg>
+                      Reports
+                  </a>
+              </li>
+  
+              <li>
+                  <a id="tab3" title="Performance" href="#tab3">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                          viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M3 12m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                          <path d="M9 8m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                          <path d="M15 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                          <path d="M4 20l14 0"></path>
+                      </svg>
+                      Performance
+                  </a>
+              </li>
+              <li>
+                  <a id="tab4" title="Funds" href="#tab4">
+                      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                          viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                          stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M3 21l18 0"></path>
+                          <path d="M3 10l18 0"></path>
+                          <path d="M5 6l7 -3l7 3"></path>
+                          <path d="M4 10l0 11"></path>
+                          <path d="M20 10l0 11"></path>
+                          <path d="M8 14l0 3"></path>
+                          <path d="M12 14l0 3"></path>
+                          <path d="M16 14l0 3"></path>
+                      </svg>
+                      Funds
+                  </a>
+              </li>
+          </ul>
+        </div>
+        <script src="js/"></script> 
+
+        <!-- Sección Derecha -->
+        <div class="right-section">
+            <!-- Widget de Suscripción -->
+            <div class="widget">
+                <h3 class="widget-title">Suscríbete a nuestro boletín</h3>
+                <form>
+                    <div class="field">
+                        <label class="label">Correo electrónico</label>
+                        <div class="control">
+                            <input class="input" type="email" placeholder="tu-email@ejemplo.com" required>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <button class="button is-primary" type="submit">Suscribirse</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Imagen debajo del widget -->
+            <img src="img/fondo.png" alt="Descripción de la imagen" class="hero-img" style="width: 100%; margin-top: 20px;">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer has-background-danger p-2"> <!-- Padding reducido -->
+        <div class="content has-text-centered has-text-white">
+            <p class="is-size-7">&copy; 2024 Agencia de Viajes. Todos los derechos reservados.</p> <!-- Tamaño de texto ajustado -->
+        </div>
+    </footer>
+
+    <script>
+        function toggleBurger() {
+            var burger = document.querySelector('.navbar-burger');
+            var menu = document.querySelector('#navbarMenu');
+            burger.classList.toggle('is-active');
+            menu.classList.toggle('is-active');
+        }
+    </script>
+</body>
+</html>
