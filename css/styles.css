@@ -1,92 +1,88 @@
 /* Definir la paleta de colores */
 :root {
-  --primary-color: #d0e6f7;    /* Azul claro */
-  --secondary-color: #2ecc71;  /* Verde claro */
-  --accent-color: #96031A;     /* Rojo de acento */
-  --background-light: #d0e6f7; /* Color de fondo claro */
-  --text-color: #333333;       /* Color del texto */
-  --button-hover-color: #c9302c; /* Color del botón al hacer hover */
-  --navbar-color: #585757;        /* Color del fondo del navbar */
-  --navbar-text-color: #ffffff;    /* Color del texto del navbar */
-  --footer-background-color: #343a40; /* Color del fondo del footer */
-  --footer-text-color: #ffffff;    /* Color del texto en el footer */
+  --primary-color: #d0e6f7;
+  --secondary-color: #2ecc71;
+  --accent-color: #96031A;
+  --background-light: #d0e6f7;
+  --text-color: #333333;
+  --button-hover-color: #c9302c;
+  --navbar-color: #585757;
+  --navbar-text-color: #ffffff;
+  --footer-background-color: #343a40;
+  --footer-text-color: #ffffff;
+  --button-padding: 12px 24px; /* Variable para padding de botones */
 }
 
 /* Estilos personalizados */
 body {
-  font-family: 'Arial', sans-serif; /* Tipografía general */
-  color: var(--text-color); /* Color del texto */
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
 }
 
-.box {
-  background-color: var(--primary-color); /* Fondo claro para el box */
-  border-radius: 8px; /* Bordes redondeados */
+.box, .custom-rounded {
+  background-color: var(--primary-color);
+  border-radius: 8px;
 }
 
+/* Estilos para secciones específicas */
 .hero.is-info {
-  background-color: var(--primary-color); /* Color de fondo de la sección hero */
+  background-color: var(--primary-color);
 }
 
 .button.is-danger {
-  background-color: var(--accent-color); /* Color del botón */
+  background-color: var(--accent-color);
 }
-
 .button.is-danger:hover {
-  background-color: var(--button-hover-color); /* Color del botón al pasar el mouse */
+  background-color: var(--button-hover-color);
 }
 
 /* Estilos para el navbar */
 .navbar {
-  background-color: var(--navbar-color); /* Fondo personalizado del navbar */
-  color: var(--navbar-text-color); /* Color del texto del navbar */
+  background-color: var(--navbar-color);
+  color: var(--navbar-text-color);
+  padding-right: 30px; /* Ajusta el valor según lo que necesites */
 }
 
-.navbar .navbar-item {
-  color: var(--navbar-text-color); /* Color del texto del navbar */
-}
-
-.navbar .navbar-item:hover {
-  background-color: var(--accent-color); /* Fondo al pasar el mouse */
-}
-
+.navbar .navbar-item,
 .navbar .navbar-burger {
-  color: var(--navbar-text-color); /* Color del icono de hamburguesa */
+  color: var(--navbar-text-color);
+}
+.navbar .navbar-item:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
 }
 
-.navbar .navbar-burger:hover {
-  color: var(--primary-color); /* Color del icono de hamburguesa al hacer hover */
+/* Ajuste de padding y márgenes en los botones dentro del navbar */
+.navbar-item .navbar-button {
+  padding: var(--button-padding);
+  margin: 4px;
 }
 
 /* Estilos para el footer */
 .footer {
-  background-color: var(--footer-background-color); /* Fondo personalizado del footer */
-  color: var(--footer-text-color); /* Color del texto en el footer */
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
 }
-
-.footer a {
-  color: var(--footer-text-color); /* Color de los enlaces en el footer */
-}
-
 .footer a:hover {
-  color: var(--primary-color); /* Cambiar el color de los enlaces al hacer hover */
+  color: var(--primary-color);
 }
 
-/* Espaciado superior */
-.mt-5 {
-  margin-top: 3rem !important; /* Aumentar margen superior */
-}
-
+/* Otros ajustes */
 .hero-body h2 {
   color: var(--text-color);
-  margin-bottom: 1rem; /* Espacio inferior */
+  margin-bottom: 16px;
 }
-
 .hero-body p {
   color: var(--text-color);
-  margin-bottom: 1.5rem; /* Espacio inferior */
-}
-/* Cambiar color del texto de los enlaces del navbar al pasar el mouse */
-.navbar-item:hover {
-  color: var(--accent-color); /* Cambia esto al color deseado */
+  margin-bottom: 24px;
 }
 
+/* Ajuste de listas */
+.column ul {
+  list-style-position: inside; 
+  padding-left: 0; 
+  margin: 0; /* Asegúrate de que no haya margen por defecto */
+}
+.column ul li {
+  margin: 0; /* Asegúrate de que no haya margen por defecto */
+}
