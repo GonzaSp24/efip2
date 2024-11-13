@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escapada Perfecta</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+    />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
+      rel="stylesheet">
+    <link rel="stylesheet" href="hoteles.css" />
+  </head>
+  <body>
+    <!-- Contenedor Principal -->
+    <div class="main-container">
+      <!-- Navbar -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../index.html">
+                <img src="../img/Sin título-1.png" alt="Logo de Agencia de Viajes" style="max-height: 150px;">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="toggleBurger()">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="../destinos.html" class="navbar-item has-text-white">Destinos</a>
+                <a href="../actividades.html" class="navbar-item has-text-white">Actividades</a>
+                <a href="../blog.html" class="navbar-item has-text-white">Blog</a>
+                <a href="hoteles.html" class="navbar-item has-text-white">Hoteles</a>
+                <a href="paquetes-turisticos.html" class="navbar-item has-text-white">Paquetes turisticos</a>
+                <a href="vuelos.html" class="navbar-item has-text-white">Vuelos</a>
+                <a href="../login.html" class="navbar-item has-text-white">Login</a>
+            </div>
+        </div>
+    </nav>
+
+
+      <!-- Hero Section -->
+      <section class="hero is-info is-small">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h2
+              class="title is-2"
+              style="color: var(--text-color); margin-bottom: 1rem"
+            >
+              Descubre los mejores hoteles para tu próxima escapada.
+            </h2>
+            <p
+              class="subtitle is-4"
+              style="color: var(--text-color); margin-bottom: 1.5rem"
+            >
+              ¡Reserva ahora y vivi la experiencia única que te mereces!
+            </p>
+            <a href="#" class="button is-danger is-large">¡Reserva Ahora!</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cards Section (Hoteles) -->
+      <div class="columns is-multiline mt-5">
+        <!-- Hotel 1 -->
+        <div class="column is-one-fourth mb-6">
+          <div class="card hotel-card is-small m-4">
+            <header class="card-header">
+              <p class="card-header-title">Hotel Playa Bonita</p>
+            </header>
+            <div class="hotel-images">
+              <img class="img1" src="img-hoteles/riviera1.jpg" alt="Imagen del hotel 1">
+              <img class="img2" src="img-hoteles/riviera2.jpg" alt="Imagen del hotel 2">
+              <img class="img3" src="img-hoteles/riviera3.jpg" alt="Imagen del hotel 3">
+            </div>
+            <div class="card-content p-4">
+              <div class="content">
+                Mexico 
+                Ubicado en la Riviera Maya, con vistas al mar Caribe.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Detalles</a>
+              <a href="#" class="card-footer-item">Reservar</a>
+            </footer>
+          </div>
+        </div>
+
+        <!-- Hotel 2 -->
+        <div class="column is-one-fourth mb-6">
+          <div class="card hotel-card is-small m-4">
+            <header class="card-header">
+              <p class="card-header-title">Hotel Costa Verde</p>
+            </header>
+            <div class="hotel-images">
+              <img class="img1" src="img-hoteles/panama1.jpg" alt="Imagen del hotel 1">
+              <img class="img2" src="img-hoteles/panama2.jpg" alt="Imagen del hotel 2">
+              <img class="img3" src="img-hoteles/panama3.jpg" alt="Imagen del hotel 3">
+            </div>
+            <div class="card-content p-4">
+              <div class="content">
+                Panama.
+                Ubicado en Boquete, con acceso a la playa y a zonas recreativas.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Detalles</a>
+              <a href="#" class="card-footer-item">Reservar</a>
+            </footer>
+          </div>
+        </div>
+
+        <!-- Hotel 3 -->
+        <div class="column is-one-fourth mb-6">
+          <div class="card hotel-card is-small m-4">
+            <header class="card-header">
+              <p class="card-header-title">Hotel Tropical Recife</p>
+            </header>
+            <div class="hotel-images">
+              <img class="img1" src="img-hoteles/brasil.jpg" alt="Imagen del hotel 1">
+              <img class="img2" src="img-hoteles/brasil2.jpg" alt="Imagen del hotel 2">
+              <img class="img3" src="img-hoteles/brasil3.jpg" alt="Imagen del hotel 3">
+            </div>
+            <div class="card-content p-4">
+              <div class="content">
+                Brasil
+               exclusivo en Rio de Janeiro. a 300 mts de la playa.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Detalles</a>
+              <a href="#" class="card-footer-item">Reservar</a>
+            </footer>
+          </div>
+        </div>
+
+        <!-- Hotel 4 -->
+        <div class="column is-one-fourth mb-6">
+          <div class="card hotel-card is-small m-4">
+            <header class="card-header">
+              <p class="card-header-title">Hotel Costa Verde</p>
+            </header>
+            <div class="hotel-images">
+              <img class="img1" src="img-hoteles/bariloche1.jpg" alt="Imagen del hotel 1">
+              <img class="img2" src="img-hoteles/bariloche2.jpg" alt="Imagen del hotel 2">
+              <img class="img3" src="img-hoteles/bariloche3.jpg" alt="Imagen del hotel 3">
+            </div>
+            <div class="card-content p-4">
+              <div class="content">
+                Argentina-Rio Negro 
+                San Carlos de Bariloche.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Detalles</a>
+              <a href="#" class="card-footer-item">Reservar</a>
+            </footer>
+          </div>
+        </div>
+
+        <!-- Hotel 5 -->
+        <div class="column is-one-fourth mb-6">
+          <div class="card hotel-card is-small m-4">
+            <header class="card-header">
+              <p class="card-header-title">Hotel Tropical Recife</p>
+            </header>
+            <div class="hotel-images">
+              <img class="img1" src="img-hoteles/cordoba1.jpg" alt="Imagen del hotel 1">
+              <img class="img2" src="img-hoteles/cordoba2.jpg" alt="Imagen del hotel 2">
+              <img class="img3" src="img-hoteles/cordoba3.jpg" alt="Imagen del hotel 3">
+            </div>
+            <div class="card-content p-4">
+              <div class="content">
+                Argentina-Cordoba 
+                Un hotel para descansar en las sierras cordobesas.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Detalles</a>
+              <a href="#" class="card-footer-item">Reservar</a>
+            </footer>
+          </div>
+        </div>
+
+        <!-- Hotel 6 -->
+        <div class="column is-one-fourth mb-6">
+          <div class="card hotel-card is-small m-4">
+            <header class="card-header">
+              <p class="card-header-title">Hotel La linda</p>
+            </header>
+            <div class="hotel-images">
+              <img class="img2" src="img-hoteles/salta2.jpg" alt="Imagen del hotel 2">
+              <img class="img3" src="img-hoteles/salta3.jpg" alt="Imagen del hotel 3">
+            </div>
+            <div class="card-content p-4">
+              <div class="content">
+                Argentina- Salta 
+                Ubicado en la ciudad de Cafayate super confortable.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Detalles</a>
+              <a href="#" class="card-footer-item">Reservar</a>
+            </footer>
+          </div>
+        </div>
+
+        <!-- Hotel 7 -->
+        <div class="column is-one-fourth mb-6">
+          <div class="card hotel-card is-small m-4">
+            <header class="card-header">
+              <p class="card-header-title">Hotel Residence</p>
+            </header>
+            <div class="hotel-images">
+              <img class="img1" src="img-hoteles/costarica1.jpg" alt="Imagen del hotel 1">
+              <img class="img2" src="img-hoteles/costarica2.jpg" alt="Imagen del hotel 2">
+              <img class="img3" src="img-hoteles/costarica.jpg" alt="Imagen del hotel 3">
+            </div>
+            <div class="card-content p-4">
+              <div class="content">
+                Panama- Puerto rico
+                Ubicada en la ciudad de Ponce. 
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Detalles</a>
+              <a href="#" class="card-footer-item">Reservar</a>
+            </footer>
+          </div>
+        </div>
+
+        <!-- Hotel 8 -->
+        <div class="column is-one-fourth mb-6">
+          <div class="card hotel-card is-small m-4">
+            <header class="card-header">
+              <p class="card-header-title">Hotel El Paraíso</p>
+            </header>
+            <div class="hotel-images">
+              <img class="img1" src="img-hoteles/ingleses.jpg" alt="Imagen del hotel 1">
+              <img class="img2" src="img-hoteles/ingleses1.jpg" alt="Imagen del hotel 2">
+              <img class="img3" src="img-hoteles/ingleses2.jpg" alt="Imagen del hotel 3">
+            </div>
+            <div class="card-content p-4">
+              <div class="content">
+                 Brasil 
+                 Ubicado en la Camboriu a 500 mts de la playa.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Detalles</a>
+              <a href="#" class="card-footer-item">Reservar</a>
+            </footer>
+          </div>
+        </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Detalles</a>
+              <a href="#" class="card-footer-item">Reservar</a>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer has-background-dark">
+      <div class="content has-text-centered">
+        <div class="columns">
+          <div class="column">
+            <h3 class="title is-5">Escapada Perfecta</h3>
+            <p>
+              Tu agencia de viajes ideal. Ofrecemos las mejores experiencias y
+              destinos para tus vacaciones.
+            </p>
+          </div>
+          <div class="column">
+            <h3 class="title is-5">Enlaces Rápidos</h3>
+            <ul>
+              <li><a href="#destinos">Nuestros Destinos</a></li>
+              <li><a href="#ofertas">Ofertas Especiales</a></li>
+              <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3 class="title is-5">Síguenos</h3>
+            <p>¡Conéctate con nosotros en las redes sociales!</p>
+            <div>
+              <a
+                href="https://facebook.com/tufacebook"
+                target="_blank"
+                class="button is-small is-link"
+                >Facebook</a
+              >
+              <a
+                href="https://instagram.com/tuinstagram"
+                target="_blank"
+                class="button is-small is-link"
+                >Instagram</a
+              >
+              <a
+                href="https://twitter.com/tutwitter"
+                target="_blank"
+                class="button is-small is-link"
+                >Twitter</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="has-text-centered">
+        <p>© 2024 Escapada Perfecta. Todos los derechos reservados.</p>
+        <p>
+          <a href="#terminos">Términos y Condiciones</a> |
+          <a href="#privacidad">Política de Privacidad</a>
+        </p>
+      </div>
+    </footer>
+    
+     
+
+
+    
+  

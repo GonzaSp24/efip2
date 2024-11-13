@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escapada Perfecta</title>
+    
+    <!-- Carga Bulma para el diseño base y Google Fonts para el estilo de tipografía -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Archivos CSS personalizados -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <body>
+        <!-- Contenedor Principal -->
+        <div class="main-container">
+        
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../index.html">
+                    <img src="../img/Sin título-1.png" alt="Logo de Agencia de Viajes" style="max-height: 150px;">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="toggleBurger()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+    
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="../destinos.html" class="navbar-item has-text-white">Destinos</a>
+                    <a href="../actividades.html" class="navbar-item has-text-white">Actividades</a>
+                    <a href="../blog.html" class="navbar-item has-text-white">Blog</a>
+                    <a href="hoteles.html" class="navbar-item has-text-white">Hoteles</a>
+                    <a href="paquetes-turisticos.html" class="navbar-item has-text-white">Paquetes turisticos</a>
+                    <a href="vuelos.html" class="navbar-item has-text-white">Vuelos</a>
+                    <a href="../login.html" class="navbar-item has-text-white">Login</a>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Hero Section con barra de búsqueda -->
+        <section class="hero is-info is-small">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h2 class="title is-2" style="color: var(--text-color); margin-bottom: 1rem">Elegi el mejor paquete turistico!</h2>
+                    <p class="subtitle is-4" style="color: var(--text-color); margin-bottom: 1.5rem">Los mejores paquetes turisticos para que vos y tus amigos disfruten al maximo su viaje.</p>
+                    
+                    <!-- Barra de búsqueda con campos de destino, fecha y pasajeros -->
+                    <div class="columns is-centered">
+                        <div class="column is-one-third">
+                            <input class="input is-medium" type="text" placeholder="Destino">
+                        </div>
+                        <div class="column is-one-third">
+                            <input class="input is-medium" type="date" placeholder="Fecha de salida">
+                        </div>
+                        <div class="column is-one-third">
+                            <input class="input is-medium" type="number" placeholder="Pasajeros">
+                        </div>
+                        <div class="column">
+                            <button class="button is-info is-medium">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Pquetes Turisticos-->
+        <h1>Paquetes Turisticos.</h1>
+        <h1>Elegi el paquete que mejor se adapte a vos</h1>
+        <p>Decidi tus vacaciones</p>
+
+                <!-- Main Content Area -->
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/punta-cana.png" alt="Punta Cana">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Punta Cana - 8 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Punta Cana</p>
+                            <p><strong>Hotel:</strong> Barceló Bávaro Palace ★★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$2.500.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/bahia-principe.png" alt="Bahia Principe">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Bahia Principe - 8 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Punta Cana</p>
+                            <p><strong>Hotel:</strong> Barceló Bávaro Palace ★★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$2.000.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/santo-domingo.png" alt="Santo Domingo">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Santo Domingo - 7 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Punta Cana</p>
+                            <p><strong>Hotel:</strong> Barceló Bávaro Palace ★★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$1.999.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/laromana.png" alt="La Romana">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - La Romana - 7 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Punta Cana</p>
+                            <p><strong>Hotel:</strong> Barceló Bávaro Palace ★★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$2.200.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/monte-cristin.png" alt="Punta Cana + Monte Cristin">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Punta Cana + Monte Cristin - 12 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Punta Cana</p>
+                            <p><strong>Hotel:</strong> Barceló Bávaro Palace ★★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$2.700.650 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/jujuy.png" alt="Jujuy">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Jujuy - 5 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Jujuy</p>
+                            <p><strong>Hotel:</strong> Design Suites Salta ★★★★</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$700.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/tucuman.png" alt="Tucuman">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Tucuman - 5 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Tucuman/p>
+                            <p><strong>Hotel:</strong> Design Suites Salta ★★★★</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$700.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/salta-paquete.png" alt="Salta">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Salta y Jujuy - 5 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Salta y Jujuy</p>
+                            <p><strong>Hotel:</strong> Design Suites Salta ★★★★</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$800.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/catamarca.png" alt="Catamarca">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Catamarca - 5 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Catamarca </p>
+                            <p><strong>Hotel:</strong> Design Suites Salta ★★★★</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$950.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/salta-jujuy.png" alt="Salta">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Salta y Jujuy - 5 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Salta y Jujuy</p>
+                            <p><strong>Hotel:</strong> Design Suites Salta ★★★★</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$800.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/cancun_mezxico.png" alt="Cancún">
+                        <div class="package-details">
+                            <h3>Verano 2025 -Cancún, Mexico - 7 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Cancún</p>
+                            <p><strong>Hotel:</strong> Dreams Sands Cancún Resort ★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$2.300.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <img src="img-paquetes/tulum-mexico.png" alt="Tulum">
+                        <div class="package-details">
+                            <h3>Verano 2025 - Tulum, Mexico- 5 noches - ¡PAGO EN USD Y CUOTAS! </h3>
+                            <p><strong>Destino:</strong> Tulum</p>
+                            <p><strong>Hotel:</strong> Bahia Principe Luxury Akumal ★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$1.850.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <img src="img-paquetes/puebla-mexico.png" alt="Puebla">
+                        <div class="package-details">
+                            <h3>Verano 2025 - Puebla, Mexico- 8 noches - ¡PAGO EN USD Y CUOTAS! </h3>
+                            <p><strong>Destino:</strong>Puebla </p>
+                            <p><strong>Hotel:</strong> Quinta Real Puebla ★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$2.500.500 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <img src="img-paquetes/oaxaca-mexico.png" alt="Oaxaca">
+                        <div class="package-details">
+                            <h3>Verano 2025 - Oaxaca Mexico- 7 noches - ¡PAGO EN USD Y CUOTAS! </h3>
+                            <p><strong>Destino:</strong>Oaxaca </p>
+                            <p><strong>Hotel:</strong> Hotel Hacienda Oaxaca ★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$1.900.500 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <img src="img-paquetes/merida.png" alt="Oaxaca + Merida">
+                        <div class="package-details">
+                            <h3>Verano 2025 - Oaxaca + Merida - 10 noches - ¡PAGO EN USD Y CUOTAS! </h3>
+                            <p><strong>Destino:</strong>Oaxaca + Merida </p>
+                            <p><strong>Hotel:</strong> Hotel Hacienda Oaxaca ★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$2.550.630 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <img src="img-paquetes/playadelcarmen.png" alt="Playa del Carmen">
+                        <div class="package-details">
+                            <h3>Verano 2025 - Playa del Carmen - 8 noches - ¡PAGO EN USD Y CUOTAS! </h3>
+                            <p><strong>Destino:</strong>Playa del Carmen </p>
+                            <p><strong>Hotel:</strong> Grand Hyatt ★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$2.230.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <img src="img-paquetes/rivera-maya.png" alt="Rivera Maya">
+                        <div class="package-details">
+                            <h3>Verano 2025 - Rivera Maya - 8 noches - ¡PAGO EN USD Y CUOTAS! </h3>
+                            <p><strong>Destino:</strong>Rivera Maya</p>
+                            <p><strong>Hotel:</strong> Hotel Rivera Maya ★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$1.999.500 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/iguazu.png" alt="Iguazú">
+                        <div class="package-details">
+                            <h3>Verano 2025 - Cataratas del Iguazu - 8 noches ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Puerto Iguazú</p>
+                            <p><strong>Hotel:</strong> Gran Meliá Iguazú ★★★★★</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$1.200.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/cataratas.png" alt="Cataratas del Iguazu">
+                        <div class="package-details">
+                            <h3>Verano 2025 - Cataratas del Iguazu - 10 noches ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Puerto Iguazú</p>
+                            <p><strong>Hotel:</strong> Gran Meliá Iguazú ★★★★★</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$1.560.200<small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/cataratas-brasil.png" alt="Cataratas del Iguazu">
+                        <div class="package-details">
+                            <h3>Verano 2025 - Cataratas del Iguazu LADO AERGENTINO + LADO BRASILERO- 10 noches ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Puerto Iguazú</p>
+                            <p><strong>Hotel:</strong> Gran Meliá Iguazú ★★★★★</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$1.900.000<small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/madrid.png" alt="Madrid">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Madrid - 5 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Madrid</p>
+                            <p><strong>Hotel:</strong> Hotel Riu Plaza España ★★★★</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$1.500.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <img src="img-paquetes/barcelona.png" alt="Barcelona">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Barcelona - 6 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Barcelona</p>
+                            <p><strong>Hotel:</strong> Barceló Raval ★★★★</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$1.600.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <img src="img-paquetes/valencia.png" alt="Valencia">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Valencia - 7 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Valencia</p>
+                            <p><strong>Hotel:</strong> Meliá Valencia ★★★★</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$1.400.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <img src="img-paquetes/sevilla.png" alt="Sevilla">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Sevilla - 8 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Sevilla</p>
+                            <p><strong>Hotel:</strong> Hotel Alfonso XIII, a Luxury Collection Hotel ★★★★★</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$2.000.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/varadero.png" alt="Varadero">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Varadero - 6 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Varadero</p>
+                            <p><strong>Hotel:</strong> Iberostar Laguna Azul ★★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$1.700.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/lahabana.png" alt="La Habana">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - La Habana - 8 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> La Habana</p>
+                            <p><strong>Hotel:</strong> Iberostar Laguna Azul ★★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$1.950.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/loscayos.png" alt="Los Cayos">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Los Cayos - 7 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Los Cayos</p>
+                            <p><strong>Hotel:</strong> Iberostar Laguna Azul ★★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$1.500.000 <small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        
+            <div class="container">
+                <main class="main-content">
+                    <div class="package">
+                        <img src="img-paquetes/varadero-cayos.png" alt="Varadero + Los Cayos">
+                        <div class="package-details">
+                            <h3>VERANO 2025 - Varadero + Los Cayos - 12 noches - ¡PAGO EN USD Y CUOTAS!</h3>
+                            <p><strong>Destino:</strong> Varadero + Los Cayos</p>
+                            <p><strong>Hotel:</strong> Iberostar Laguna Azul ★★★★★ Todo Incluido</p>
+                            <div class="tags">
+                                <span>VUELO</span> <span>HOTEL</span> <span>TRASLADOS</span> <span>ASISTENCIA</span>
+                            </div>
+                            <p class="price">$2.500.000<small>incl. imp. PAIS + AFIP</small></p>
+                            <button>Ver oferta</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            
+            </main>
+        </div>
+    <!-- Footer -->
+    <footer class="footer has-background-grey-dark">
+        <div class="content has-text-centered has-text-white">
+            <p>&copy; 2024 Escapada Perfecta. Todos los derechos reservados.</p>
+            <p><a href="#" class="has-text-white">Política de Privacidad</a> | <a href="#" class="has-text-white">Términos y Condiciones</a></p>
+        </div>
+    </footer>
+
+    <!-- Script para menú responsive -->
+    <!-- Script del carrusel -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleBurger() {
+            var burger = document.querySelector(".navbar-burger");
+            var menu = document.querySelector("#navbarMenu");
+            burger.classList.toggle("is-active");
+            menu.classList.toggle("is-active");
+        }
+    </script>
+</body>

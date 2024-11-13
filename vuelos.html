@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escapada Perfecta - Vuelos Baratos</title>
+    
+    <!-- Carga Bulma para el diseño base y Google Fonts para el estilo de tipografía -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Archivos CSS personalizados -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .hero-body {
+            background-color: #b2d4f2;
+            padding: 2rem 1.5rem;
+        }
+        .main-container {
+            padding: 2rem;
+        }
+        .grid-container {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            margin: 2rem 0;
+        }
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+        .grid-item span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            border-radius: 0 0 8px 8px;
+        }
+        footer {
+            padding: 1rem;
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../index.html">
+                <img src="../img/Sin título-1.png" alt="Logo de Agencia de Viajes" style="max-height: 150px;">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="toggleBurger()">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="../destinos.html" class="navbar-item has-text-white">Destinos</a>
+                <a href="../actividades.html" class="navbar-item has-text-white">Actividades</a>
+                <a href="../blog.html" class="navbar-item has-text-white">Blog</a>
+                <a href="hoteles.html" class="navbar-item has-text-white">Hoteles</a>
+                <a href="paquetes-turisticos.html" class="navbar-item has-text-white">Paquetes turisticos</a>
+                <a href="vuelos.html" class="navbar-item has-text-white">Vuelos</a>
+                <a href="../login.html" class="navbar-item has-text-white">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section con barra de búsqueda -->
+    <section class="hero is-info is-small">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h2 class="title is-2">¡Vuela con los mejores precios!</h2>
+                <p class="subtitle is-4">Elige el vuelo perfecto para arrancar tus vacaciones con todo.</p>
+                
+                <!-- Barra de búsqueda con campos de destino, fecha y pasajeros -->
+                <div class="columns is-centered">
+                    <div class="column is-one-third">
+                        <input class="input is-medium" type="text" placeholder="Destino">
+                    </div>
+                    <div class="column is-one-third">
+                        <input class="input is-medium" type="date" placeholder="Fecha de salida">
+                    </div>
+                    <div class="column is-one-third">
+                        <input class="input is-medium" type="number" placeholder="Pasajeros">
+                    </div>
+                    <div class="column">
+                        <button class="button is-info is-medium">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vuelos -->
+    <section class="main-container">
+        <h1 class="title has-text-centered">Vuelos Baratos</h1>
+        <h2 class="subtitle has-text-centered">Arranca tus vacaciones ahorrando</h2>
+        <p class="has-text-centered">Decidí tus vacaciones</p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="img-paquetes/brasil_paquete.jpg" alt="Brasil">
+                <span>Brasil desde $345.272</span>
+            </div>
+            <div class="grid-item">
+                <img src="img-paquetes/patagonia_arg.png" alt="Patagonia Argentina">
+                <span>Patagonia Argentina desde $78.500</span>
+            </div>
+            <div class="grid-item">
+                <img src="img-paquetes/mexi_paquete.png" alt="México">
+                <span>México desde $750.650</span>
+            </div>
+            <div class="grid-item">
+                <img src="img-paquetes/iguazu.png" alt="Cataratas del Iguazú">
+                <span>Cataratas del Iguazú desde $50.000</span>
+            </div>
+            <div class="grid-item">
+                <img src="img-paquetes/republica_dominicana.jpg" alt="República Dominicana">
+                <span>República Dominicana desde $1.550.000</span>
+            </div>
+            <div class="grid-item">
+                <img src="img-paquetes/noroeste_arg.jpg" alt="Noroeste Argentino">
+                <span>Noroeste Argentino desde $65.000</span>
+            </div>
+            <div class="grid-item">
+                <img src="img-paquetes/cuba.jpg" alt="Cuba">
+                <span>Cuba desde $1.730.000</span>
+            </div>
+            <div class="grid-item">
+                <img src="img-paquetes/europa.jpg" alt="Europa">
+                <span>Europa desde $1.357.485</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer has-background-grey-dark">
+        <div class="content has-text-centered has-text-white">
+            <p>&copy; 2024 Escapada Perfecta. Todos los derechos reservados.</p>
+            <p><a href="#" class="has-text-white">Política de Privacidad</a> | <a href="#" class="has-text-white">Términos y Condiciones</a></p>
+        </div>
+    </footer>
+
+    <!-- Script para menú responsive -->
+    <script>
+        function toggleBurger() {
+            var burger = document.querySelector(".navbar-burger");
+            var menu = document.querySelector("#navbarMenu");
+            burger.classList.toggle("is-active");
+            menu.classList.toggle("is-active");
+        }
+    </script>
+</body>
+</html>
