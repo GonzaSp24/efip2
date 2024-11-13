@@ -21,73 +21,66 @@
       <!-- Navbar -->
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="index.html">
-            <img
-              src="img/Sin título-1.png"
-              alt="Logo de Agencia de Viajes"
-              style="max-height: 150px"
-              class="navbar-logo"
-            />
-          </a>
-          <a
-            role="button"
-            class="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarMenu"
-            onclick="toggleBurger()"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+            <a class="navbar-item" href="../index.html">
+                <img src="../img/Sin título-1.png" alt="Logo de Agencia de Viajes" style="max-height: 150px;">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="toggleBurger()">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
 
         <div id="navbarMenu" class="navbar-menu">
-          <div class="navbar-end">
-            <a href="#" class="navbar-item has-text-white">Destinos</a>
-            <a href="#" class="navbar-item has-text-white">Hoteles</a>
-            <a href="#" class="navbar-item has-text-white">Vehículos</a>
-            <a href="#" class="navbar-item has-text-white">Pagos</a>
-            <a href="#" class="navbar-item has-text-white">Info Turística</a>
-            <a href="registro.html" class="navbar-item has-text-white">Registro</a>
-            
-          </div>
+            <div class="navbar-end">
+                <a href="../destinos.html" class="navbar-item has-text-white">Destinos</a>
+                <a href="../actividades.html" class="navbar-item has-text-white">Actividades</a>
+                <a href="../blog.html" class="navbar-item has-text-white">Blog</a>
+                <a href="#" class="navbar-item has-text-white">Hoteles</a>
+                <a href="#" class="navbar-item has-text-white">Pagos</a>
+                <a href="#" class="navbar-item has-text-white">Info Turística</a>
+                <a href="../login.html" class="navbar-item has-text-white">Login</a>
+            </div>
         </div>
-      </nav>
+    </nav>
 
     </header>
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <form id="formularioInicioSesion" class="box" style="max-width: 600px; margin: 0 auto;">
-                        <h1 class="title"
-                            style="color: var(--text-color); margin-bottom: 1rem"  
-                        >Ingresar</h1>
-                        <div class="field mb-4">
-                            <label class="label"
-                              style="color: var(--text-color); margin-bottom: 1rem">Nombre de Usuario</label>
-                            <div class="control">
+                  <form id="formularioInicioSesion" class="box" style="max-width: 600px; margin: 0 auto;">
+                    <h1 class="title" style="color: var(--text-color); margin-bottom: 1rem">Ingresar</h1>
+                    <div class="field mb-4">
+                        <label class="label" style="color: var(--text-color); margin-bottom: 1rem">Nombre de Usuario</label>
+                        <div class="control">
                             <input id="loginUsuario" class="input" type="text" placeholder="Ingrese su nombre de Usuario" required>
                         </div>
-
-                        <div class="field mt-4">
-                            <label class="label"
-                              style="color: var(--text-color); margin-bottom: 1rem"
-                            >Contraseña</label>
-                            <div class="control">
-                                <input id="loginContrasena" class="input" type="password" placeholder="********" required>
-                            </div>
+                    </div>
+                
+                    <div class="field mt-4">
+                        <label class="label" style="color: var(--text-color); margin-bottom: 1rem">Contraseña</label>
+                        <div class="control">
+                            <input id="loginContrasena" class="input" type="password" placeholder="********" required>
                         </div>
-                        <div class = "field mb-4">
-                            <label class="checkbox"
-                              style="color: var(--text-color); margin-bottom: 1rem"
-                            >
-                                <input type="checkbox" />
-                                Recuerdame
-                            </label>
-                        </div>
-                        <button type="submit" class="button is-danger is-large">Ingresar</button>
-                    </form>
+                    </div>
+                
+                    <div class="field mb-4">
+                        <label class="checkbox" style="color: var(--text-color); margin-bottom: 1rem">
+                            <input type="checkbox" />
+                            Recuérdame
+                        </label>
+                    </div>
+                
+                    <button type="submit" class="button is-danger is-large">Ingresar</button>
+                
+                    <!-- Enlace para registrarse -->
+                    <p class="has-text-centered mt-4">
+                        <a href="registro.html" style="font-family: 'Poppins', sans-serif; font-size: 0.9rem; color: var(--accent-color); text-decoration: underline;">
+                            ¿No tienes una cuenta? Regístrate aquí
+                        </a>
+                    </p>
+                </form>
+                
+                
                     
                 </div>
             </div>

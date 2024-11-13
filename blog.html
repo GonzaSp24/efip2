@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Escapada Perfecta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../index.html">
+                <img src="../img/Sin título-1.png" alt="Logo de Agencia de Viajes" style="max-height: 150px;">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="toggleBurger()">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="../destinos.html" class="navbar-item has-text-white">Destinos</a>
+                <a href="../actividades.html" class="navbar-item has-text-white">Actividades</a>
+                <a href="../blog.html" class="navbar-item has-text-white">Blog</a>
+                <a href="#" class="navbar-item has-text-white">Hoteles</a>
+                <a href="#" class="navbar-item has-text-white">Pagos</a>
+                <a href="#" class="navbar-item has-text-white">Info Turística</a>
+                <a href="../login.html" class="navbar-item has-text-white">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Recomendaciones de Viajes -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-3 has-text-centered">Recomendaciones de Viajes</h2>
+            <div class="columns is-multiline">
+                <!-- Card 1 -->
+                <div class="column is-one-quarter">
+                    <a href="notas/nota1.html" class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="img/ahorrar.jpg" alt="Recomendación 1">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-5">¿Cómo ahorrar en viajes?</h3>
+                            <p>Conocé los mejores consejos para ahorrar hasta un 65% en tus viajes con paquetes verificados.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 2 -->
+                <div class="column is-one-quarter">
+                    <a href="notas/nota2.html" class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="img/travelt.jpg" alt="Recomendación 2">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-5">¿Cuando es el Travel Tuesday 2024?</h3>
+                            <p>El evento ideal para viajeros: conseguí ofertas en vuelos, hoteles y más.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 3 -->
+                <div class="column is-one-quarter">
+                    <a href="notas/nota3.html" class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="img/hotel.jpg" alt="Recomendación 3">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-5">Hoteles cerca del estadio River Plate: Disfrutá los mejores shows </h3>
+                            <p>Descubrí los mejores destinos para tus vacaciones de verano.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 4 -->
+                <div class="column is-one-quarter">
+                    <a href="notas/nota4.html" class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="img/esquel2.jpg"Recomendación 4">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-5">Top 5 de cosas que hacer en Esquel</h3>
+                            <p>Conocé las mejores actividades y excursiones que hacer en Esquel para disfrutar de una visita única.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Guías de Viaje -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-3 has-text-centered">Guías de Viaje</h2>
+            <div class="columns is-multiline">
+                <!-- Card 1 -->
+                <div class="column is-one-quarter">
+                    <a href="notas/guia1.html" class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="img/mendoza.jpg" alt="Guía de Viaje 1">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-5">¿Qué hacer 3 días en Mendoza?</h3>
+                            <p>Explorá los mejores planes para aprovechar al máximo tu tiempo en Mendoza.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 2 -->
+                <div class="column is-one-quarter">
+                    <a href="notas/guia2.html" class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="img/madrid.jpg" alt="Guía de Viaje 2">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-5">¿Qué hacer 3 días en Madrid?</h3>
+                            <p>Conocé las principales atracciones de Madrid en una escapada corta.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 3 -->
+                <div class="column is-one-quarter">
+                    <a href="notas/guia3.html" class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="img/salta.jpg" alt="Guía de Viaje 3">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-5">¿Qué hacer 3 días en Salta?</h3>
+                            <p>Disfrutá de los mejores lugares en Salta durante un viaje corto.</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 4 -->
+                <div class="column is-one-quarter">
+                    <a href="notas/guia4.html" class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="img/dinamarca.jpg" alt="Guía de Viaje 4">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-5">Que hacer en Dinamarca</h3>
+                            <p>Conocé qué lugares tenés que visitar en Copenhague: descubrí estos tips. Te contamos los mejores secretos.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script src="js/footer.js"></script>
+    <script>
+        function toggleBurger() {
+            var burger = document.querySelector(".navbar-burger");
+            var menu = document.querySelector("#navbarMenu");
+            burger.classList.toggle('is-active');
+            menu.classList.toggle('is-active');
+        }
+    </script>
+</body>
+</html>

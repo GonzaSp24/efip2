@@ -15,7 +15,7 @@
 
 /* Estilos generales */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: var(--text-color);
   background-color: var(--background-light);
 }
@@ -42,7 +42,7 @@ body {
 .navbar {
   background-color: var(--navbar-color);
   color: var(--navbar-text-color);
-  padding-right: 20px;  /* Añade un espacio al lado derecho */
+  padding-right: 20px;
 }
 
 .navbar .navbar-item, .navbar .navbar-burger {
@@ -108,11 +108,13 @@ body {
 
 /* Tarjetas */
 .card {
-  min-height: 450px;
-  max-width: 440px;
+  max-width: 800px;
+  height: 500;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  margin: 10px;
 }
 
 /* Contenido y footer de las tarjetas */
@@ -123,19 +125,15 @@ body {
 
 .card-content {
   font-family: 'Poppins', sans-serif;
-  font-size: 24px; /* Ajuste del tamaño de texto */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  padding: 20px;
   text-align: center;
 }
 
 /* Ajuste en las imágenes de las tarjetas */
 .card-image img {
   object-fit: cover;
-  max-height: 380px;
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 /* Centrar las columnas que contienen las tarjetas */
@@ -143,22 +141,21 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 0px;
 }
 
 /* Ajustar el tamaño de las tarjetas en dispositivos pequeños */
 @media (max-width: 768px) {
   .column {
-    flex: 1 1 100%; /* Las tarjetas ocuparán el 100% del ancho */
+    flex: 1 1 100%;
   }
 
-  /* Ajuste para botones en móviles */
   .button {
     padding: 10px 15px;
   }
 
   .navbar-logo {
-    max-height: 100px; /* Reduces the size of the logo on small screens */
+    max-height: 100px;
   }
 }
 
@@ -168,10 +165,42 @@ body {
   font-size: 20px;
 }
 
-.card-header-title {
-  font-size: 20px; /* Tamaño del texto del título */
+.title.is-4 {
+  margin-top: 5px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.card-footer-item {
-  font-size: 20px; /* Tamaño del texto en los enlaces */
+.card-content p {
+  margin-top: 10px;
+}
+
+/* Tarjetas de países */
+.paises {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.tarjeta-pais {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 200px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.tarjeta-pais img {
+  width: 100%;
+  height: auto;
+}
+
+.tarjeta-pais h2 {
+  margin: 10px 0;
+}
+
+.tarjeta-pais:hover {
+  transform: scale(1.05);
 }
