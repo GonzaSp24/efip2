@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escapada Perfecta - Bariloche</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+    />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/bariloche.css" />
+    <style>
+        /* Custom Styles */
+        .intro {
+            background-color: #3e8e41; /* Foundation-inspired color */
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+        .detalles-paquete, .galeria {
+            margin: 2rem;
+            padding: 1.5rem;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+        .detalles-paquete h3, .galeria h3 {
+            color: #3e8e41;
+        }
+        .imagenes img {
+            width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .button.is-primary {
+            background-color: #ff5722; /* Foundation-inspired primary button color */
+            color: #fff;
+            border: none;
+        }
+        .button.is-primary:hover {
+            background-color: #e64a19;
+        }
+        .navbar {
+            background-color: #3e8e41; /* Navbar color */
+        }
+        .navbar-item.has-text-white:hover {
+            background-color: #2e7033;
+        }
+        .navbar-burger {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor Principal -->
+    <div class="main-container">
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../index.html">
+                    <img src="../img/Sin título-1.png" alt="Logo de Agencia de Viajes" style="max-height: 150px;">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="toggleBurger()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="../destinos.html" class="navbar-item has-text-white">Destinos</a>
+                    <a href="../actividades.html" class="navbar-item has-text-white">Actividades</a>
+                    <a href="../blog.html" class="navbar-item has-text-white">Blog</a>
+                    <a href="hoteles.html" class="navbar-item has-text-white">Hoteles</a>
+                    <a href="paquetes-turisticos.html" class="navbar-item has-text-white">Paquetes Turísticos</a>
+                    <a href="vuelos.html" class="navbar-item has-text-white">Vuelos</a>
+                    <a href="../login.html" class="navbar-item has-text-white">Login</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Intro Section -->
+        <section class="intro">
+            <h2>¡Vive una experiencia inolvidable en Bariloche!</h2>
+            <p>Bariloche es uno de los destinos más emocionantes para los egresados. Disfruta de una semana llena de aventuras, fiestas, excursiones y nuevos amigos en un lugar mágico rodeado de montañas, lagos y paisajes espectaculares.</p>
+        </section>
+
+        <!-- Detalles del Paquete -->
+        <section class="detalles-paquete">
+            <h3>Detalles del Paquete</h3>
+            <ul>
+                <li><strong>Duración:</strong> 7 días y 6 noches</li>
+                <li><strong>Alojamiento:</strong> Hotel 3 estrellas con desayuno incluido</li>
+                <li><strong>Excursiones:</strong> Cerro Catedral, Circuito Chico, Isla Victoria, y más</li>
+                <li><strong>Actividades:</strong> Fiestas temáticas, paseos en catamarán, deportes de aventura</li>
+                <li><strong>Incluye:</strong> Transporte, comidas, guías, y seguro de viaje</li>
+            </ul>
+        </section>
+
+        <!-- Galería de Imágenes -->
+        <section class="galeria">
+            <h3>Galería de Imágenes</h3>
+            <div class="imagenes">
+                <img src="/img/bariloche.jpg" alt="Bariloche">
+            </div>
+        </section>
+
+        <!-- Botón "Escápate con nosotros" -->
+        <div class="has-text-centered">
+            <a href="/login.html" class="button is-primary is-large is-rounded is-fullwidth">
+                Escápate con nosotros
+            </a>
+        </div>
+    </div>
+
+    <!-- Script para menú responsive -->
+    <script>
+        function toggleBurger() {
+            var burger = document.querySelector(".navbar-burger");
+            var menu = document.querySelector("#navbarMenu");
+            burger.classList.toggle("is-active");
+            menu.classList.toggle("is-active");
+        }
+    </script>
+</body>
+</html>

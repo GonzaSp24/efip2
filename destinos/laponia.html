@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laponia Finlandesa - Tierra de la Aurora Boreal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Contenedor Principal -->
+    <div class="main-container">
+      <!-- Navbar -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../index.html">
+                <img src="../img/Sin título-1.png" alt="Logo de Agencia de Viajes" style="max-height: 150px;">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="toggleBurger()">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="../destinos.html" class="navbar-item has-text-white">Destinos</a>
+                <a href="../actividades.html" class="navbar-item has-text-white">Actividades</a>
+                <a href="../blog.html" class="navbar-item has-text-white">Blog</a>
+                <a href="../hoteles.html" class="navbar-item has-text-white">Hoteles</a>
+                <a href="../paquetes-turisticos.html" class="navbar-item has-text-white">Paquetes turisticos</a>
+                <a href="../vuelos.html" class="navbar-item has-text-white">Vuelos</a>
+                <a href="../login.html" class="navbar-item has-text-white">Login</a>
+            </div>
+        </div>
+    </nav>
+
+      <!-- Sección Principal de Laponia -->
+      <section class="section">
+        <div class="container">
+            <h1 class="title is-2 has-text-centered">Laponia Finlandesa</h1>
+            <p class="has-text-centered">Descubre la tierra mágica de Papá Noel, rodeada de paisajes nevados, auroras boreales y adorables renos. Vive una experiencia única en el Círculo Polar Ártico, donde el invierno cobra vida en su máxima expresión.</p>
+
+            <div class="columns is-multiline">
+                <div class="column is-6">
+                    <figure class="image">
+                        <img src="img/laponia.jpg" alt="Aurora Boreal en Laponia" />
+                    </figure>
+                </div>
+                
+
+            <p>Visita el Pueblo de Papá Noel en Rovaniemi, la capital oficial de la Laponia finlandesa, y cruza el Círculo Polar Ártico mientras exploras sus paisajes nevados. Disfruta de actividades como paseos en huskies, carreras de renos y la posibilidad de ver las impresionantes auroras boreales.</p>
+
+            <h3 class="title is-4">Destinos Imperdibles</h3>
+            <ul>
+                <li>Pueblo de Papá Noel en Rovaniemi</li>
+                <li>Círculo Polar Ártico: Cruza este importante paralelo geográfico.</li>
+                <li>Aurora Boreal: Observa el fenómeno natural más impresionante del norte.</li>
+                <li>Safaris en Husky: Aventura en trineo tirado por perros en los paisajes nevados.</li>
+                <li>Carreras de Renos: Vive la emoción de las carreras en trineo con renos.</li>
+            </ul>
+
+            <!-- Video de YouTube -->
+            <div class="has-text-centered">
+                <h3 class="title is-4">Descubre Laponia</h3>
+                <iframe width="560" height="315" src="https://youtu.be/CxWeEw1Q6mM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </div>
+      </section>
+              <!-- Botón "Escápate con nosotros" -->
+              <div class="has-text-centered">
+              <a href="login.html" class="button is-primary is-large is-rounded is-fullwidth">
+                  Escápate con nosotros
+              </a>
+          </div>
+      </div>
+
+
+      <!-- Footer -->
+      <footer class="footer has-background-info">
+        <div class="content has-text-centered has-text-white">
+          <p>&copy; 2024 Escapada Perfecta. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+
+    </div>
+
+    <script>
+        // Función para alternar la visibilidad del menú en dispositivos móviles
+        function toggleBurger() {
+            const navbarMenu = document.getElementById('navbarMenu');
+            navbarMenu.classList.toggle('is-active');
+        }
+    </script>
+  </body>
+</html>

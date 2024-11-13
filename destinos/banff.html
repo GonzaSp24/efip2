@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banff - Un Paraíso Invernal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Contenedor Principal -->
+    <div class="main-container">
+      <!-- Navbar -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../index.html">
+                <img src="../img/Sin título-1.png" alt="Logo de Agencia de Viajes" style="max-height: 150px;">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="toggleBurger()">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="../destinos.html" class="navbar-item has-text-white">Destinos</a>
+                <a href="../actividades.html" class="navbar-item has-text-white">Actividades</a>
+                <a href="../blog.html" class="navbar-item has-text-white">Blog</a>
+                <a href="../hoteles.html" class="navbar-item has-text-white">Hoteles</a>
+                <a href="../paquetes-turisticos.html" class="navbar-item has-text-white">Paquetes turisticos</a>
+                <a href="../vuelos.html" class="navbar-item has-text-white">Vuelos</a>
+                <a href="../login.html" class="navbar-item has-text-white">Login</a>
+            </div>
+        </div>
+    </nav>
+
+      <!-- Sección Principal de Banff -->
+      <section class="section">
+        <div class="container">
+            <h1 class="title is-2 has-text-centered">Banff, Canadá</h1>
+            <p class="has-text-centered">Un paraíso invernal con montañas cubiertas de nieve, lagos cristalinos y un paisaje impresionante. Banff es un destino ideal para los amantes del frío, el esquí y la naturaleza.</p>
+
+            <div class="columns is-multiline">
+                <div class="column is-6">
+                    <figure class="image">
+                        <img src="img/banff.jpg" alt="Banff 1" />
+                    </figure>
+                </div>
+
+
+            <p>Banff National Park es uno de los parques más antiguos y conocidos de Canadá, con una belleza natural que atrae a visitantes de todo el mundo. Es un lugar perfecto para practicar actividades al aire libre como senderismo, esquí y observación de fauna.</p>
+
+            <!-- Video de YouTube -->
+            <div class="has-text-centered">
+                <h3 class="title is-4">Descubre Banff</h3>
+                <iframe width="560" height="315" src="https://youtu.be/YPa9dmX2X1M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </div>
+      </section>
+              <!-- Botón "Escápate con nosotros" -->
+              <div class="has-text-centered">
+              <a href="login.html" class="button is-primary is-large is-rounded is-fullwidth">
+                  Escápate con nosotros
+              </a>
+          </div>
+      </div>
+  </section>
+
+      <!-- Footer -->
+      <footer class="footer has-background-info">
+        <div class="content has-text-centered has-text-white">
+          <p>&copy; 2024 Escapada Perfecta. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+
+    </div>
+
+    <script>
+        // Función para alternar la visibilidad del menú en dispositivos móviles
+        function toggleBurger() {
+            const navbarMenu = document.getElementById('navbarMenu');
+            navbarMenu.classList.toggle('is-active');
+        }
+    </script>
+  </body>
+</html>

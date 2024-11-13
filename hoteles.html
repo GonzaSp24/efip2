@@ -12,6 +12,57 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
       rel="stylesheet">
     <link rel="stylesheet" href="hoteles.css" />
+    <style>
+      /* Foundation-inspired colors */
+      :root {
+        --primary-color: #2c3e50; /* Navbar, titles */
+        --secondary-color: #e74c3c; /* Buttons */
+        --background-color: #ecf0f1; /* Background */
+        --text-color: #2c3e50; /* Main text */
+        --accent-color: #3498db; /* Links */
+      }
+      .navbar, .footer {
+        background-color: var(--primary-color);
+        color: #fff;
+      }
+      .navbar-item, .footer a {
+        color: #ffffff;
+      }
+      .navbar-item:hover {
+        background-color: #34495e;
+      }
+      .hero.is-info {
+        background-color: var(--secondary-color);
+      }
+      .hero .title, .hero .subtitle {
+        color: #ffffff;
+      }
+      .button.is-danger {
+        background-color: var(--accent-color);
+        color: #ffffff;
+        border: none;
+      }
+      .button.is-danger:hover {
+        background-color: #2980b9;
+      }
+      .card-header-title {
+        color: var(--primary-color);
+      }
+      .card {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .card-footer-item {
+        color: var(--accent-color);
+      }
+      .content {
+        color: var(--text-color);
+      }
+      .footer {
+        color: #ffffff;
+      }
+    </style>
   </head>
   <body>
     <!-- Contenedor Principal -->
@@ -35,29 +86,22 @@
                 <a href="../actividades.html" class="navbar-item has-text-white">Actividades</a>
                 <a href="../blog.html" class="navbar-item has-text-white">Blog</a>
                 <a href="hoteles.html" class="navbar-item has-text-white">Hoteles</a>
-                <a href="paquetes-turisticos.html" class="navbar-item has-text-white">Paquetes turisticos</a>
+                <a href="paquetes-turisticos.html" class="navbar-item has-text-white">Paquetes Turísticos</a>
                 <a href="vuelos.html" class="navbar-item has-text-white">Vuelos</a>
                 <a href="../login.html" class="navbar-item has-text-white">Login</a>
             </div>
         </div>
-    </nav>
-
+      </nav>
 
       <!-- Hero Section -->
       <section class="hero is-info is-small">
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h2
-              class="title is-2"
-              style="color: var(--text-color); margin-bottom: 1rem"
-            >
+            <h2 class="title is-2" style="margin-bottom: 1rem">
               Descubre los mejores hoteles para tu próxima escapada.
             </h2>
-            <p
-              class="subtitle is-4"
-              style="color: var(--text-color); margin-bottom: 1.5rem"
-            >
-              ¡Reserva ahora y vivi la experiencia única que te mereces!
+            <p class="subtitle is-4" style="margin-bottom: 1.5rem">
+              ¡Reserva ahora y vive la experiencia única que te mereces!
             </p>
             <a href="#" class="button is-danger is-large">¡Reserva Ahora!</a>
           </div>
@@ -74,13 +118,10 @@
             </header>
             <div class="hotel-images">
               <img class="img1" src="img-hoteles/riviera1.jpg" alt="Imagen del hotel 1">
-              <img class="img2" src="img-hoteles/riviera2.jpg" alt="Imagen del hotel 2">
-              <img class="img3" src="img-hoteles/riviera3.jpg" alt="Imagen del hotel 3">
             </div>
             <div class="card-content p-4">
               <div class="content">
-                Mexico 
-                Ubicado en la Riviera Maya, con vistas al mar Caribe.
+                México - Ubicado en la Riviera Maya, con vistas al mar Caribe.
               </div>
             </div>
             <footer class="card-footer">
@@ -98,13 +139,10 @@
             </header>
             <div class="hotel-images">
               <img class="img1" src="img-hoteles/panama1.jpg" alt="Imagen del hotel 1">
-              <img class="img2" src="img-hoteles/panama2.jpg" alt="Imagen del hotel 2">
-              <img class="img3" src="img-hoteles/panama3.jpg" alt="Imagen del hotel 3">
             </div>
             <div class="card-content p-4">
               <div class="content">
-                Panama.
-                Ubicado en Boquete, con acceso a la playa y a zonas recreativas.
+                Panamá - Ubicado en Boquete, con acceso a la playa y a zonas recreativas.
               </div>
             </div>
             <footer class="card-footer">
@@ -122,13 +160,10 @@
             </header>
             <div class="hotel-images">
               <img class="img1" src="img-hoteles/brasil.jpg" alt="Imagen del hotel 1">
-              <img class="img2" src="img-hoteles/brasil2.jpg" alt="Imagen del hotel 2">
-              <img class="img3" src="img-hoteles/brasil3.jpg" alt="Imagen del hotel 3">
             </div>
             <div class="card-content p-4">
               <div class="content">
-                Brasil
-               exclusivo en Rio de Janeiro. a 300 mts de la playa.
+                Brasil - Exclusivo en Rio de Janeiro, a 300 mts de la playa.
               </div>
             </div>
             <footer class="card-footer">
@@ -146,13 +181,10 @@
             </header>
             <div class="hotel-images">
               <img class="img1" src="img-hoteles/bariloche1.jpg" alt="Imagen del hotel 1">
-              <img class="img2" src="img-hoteles/bariloche2.jpg" alt="Imagen del hotel 2">
-              <img class="img3" src="img-hoteles/bariloche3.jpg" alt="Imagen del hotel 3">
             </div>
             <div class="card-content p-4">
               <div class="content">
-                Argentina-Rio Negro 
-                San Carlos de Bariloche.
+                Argentina - San Carlos de Bariloche, en la provincia de Rio Negro.
               </div>
             </div>
             <footer class="card-footer">
@@ -166,17 +198,14 @@
         <div class="column is-one-fourth mb-6">
           <div class="card hotel-card is-small m-4">
             <header class="card-header">
-              <p class="card-header-title">Hotel Tropical Recife</p>
+              <p class="card-header-title">Hotel Cordoba Hills</p>
             </header>
             <div class="hotel-images">
               <img class="img1" src="img-hoteles/cordoba1.jpg" alt="Imagen del hotel 1">
-              <img class="img2" src="img-hoteles/cordoba2.jpg" alt="Imagen del hotel 2">
-              <img class="img3" src="img-hoteles/cordoba3.jpg" alt="Imagen del hotel 3">
             </div>
             <div class="card-content p-4">
               <div class="content">
-                Argentina-Cordoba 
-                Un hotel para descansar en las sierras cordobesas.
+                Argentina - Ubicado en las sierras de Córdoba, ideal para descansar.
               </div>
             </div>
             <footer class="card-footer">
@@ -190,16 +219,14 @@
         <div class="column is-one-fourth mb-6">
           <div class="card hotel-card is-small m-4">
             <header class="card-header">
-              <p class="card-header-title">Hotel La linda</p>
+              <p class="card-header-title">Hotel La Linda</p>
             </header>
             <div class="hotel-images">
-              <img class="img2" src="img-hoteles/salta2.jpg" alt="Imagen del hotel 2">
-              <img class="img3" src="img-hoteles/salta3.jpg" alt="Imagen del hotel 3">
+              <img class="img1" src="img-hoteles/salta2.jpg" alt="Imagen del hotel 1">
             </div>
             <div class="card-content p-4">
               <div class="content">
-                Argentina- Salta 
-                Ubicado en la ciudad de Cafayate super confortable.
+                Argentina - En la ciudad de Cafayate, provincia de Salta, muy confortable.
               </div>
             </div>
             <footer class="card-footer">
@@ -217,13 +244,10 @@
             </header>
             <div class="hotel-images">
               <img class="img1" src="img-hoteles/costarica1.jpg" alt="Imagen del hotel 1">
-              <img class="img2" src="img-hoteles/costarica2.jpg" alt="Imagen del hotel 2">
-              <img class="img3" src="img-hoteles/costarica.jpg" alt="Imagen del hotel 3">
             </div>
             <div class="card-content p-4">
               <div class="content">
-                Panama- Puerto rico
-                Ubicada en la ciudad de Ponce. 
+                Panamá - Ubicado en la ciudad de Ponce, Puerto Rico.
               </div>
             </div>
             <footer class="card-footer">
@@ -241,13 +265,10 @@
             </header>
             <div class="hotel-images">
               <img class="img1" src="img-hoteles/ingleses.jpg" alt="Imagen del hotel 1">
-              <img class="img2" src="img-hoteles/ingleses1.jpg" alt="Imagen del hotel 2">
-              <img class="img3" src="img-hoteles/ingleses2.jpg" alt="Imagen del hotel 3">
             </div>
             <div class="card-content p-4">
               <div class="content">
-                 Brasil 
-                 Ubicado en la Camboriu a 500 mts de la playa.
+                Brasil - Ubicado en Camboriú, a 500 mts de la playa.
               </div>
             </div>
             <footer class="card-footer">
@@ -256,14 +277,10 @@
             </footer>
           </div>
         </div>
-            <footer class="card-footer">
-              <a href="#" class="card-footer-item">Detalles</a>
-              <a href="#" class="card-footer-item">Reservar</a>
-            </footer>
-          </div>
-        </div>
       </div>
     </div>
+
+    <!-- Footer -->
     <footer class="footer has-background-dark">
       <div class="content has-text-centered">
         <div class="columns">
@@ -286,24 +303,9 @@
             <h3 class="title is-5">Síguenos</h3>
             <p>¡Conéctate con nosotros en las redes sociales!</p>
             <div>
-              <a
-                href="https://facebook.com/tufacebook"
-                target="_blank"
-                class="button is-small is-link"
-                >Facebook</a
-              >
-              <a
-                href="https://instagram.com/tuinstagram"
-                target="_blank"
-                class="button is-small is-link"
-                >Instagram</a
-              >
-              <a
-                href="https://twitter.com/tutwitter"
-                target="_blank"
-                class="button is-small is-link"
-                >Twitter</a
-              >
+              <a href="https://facebook.com/tufacebook" target="_blank" class="button is-small is-link">Facebook</a>
+              <a href="https://instagram.com/tuinstagram" target="_blank" class="button is-small is-link">Instagram</a>
+              <a href="https://twitter.com/tutwitter" target="_blank" class="button is-small is-link">Twitter</a>
             </div>
           </div>
         </div>
@@ -316,9 +318,15 @@
         </p>
       </div>
     </footer>
-    
-     
 
-
-    
-  
+    <!-- Script para menú responsive -->
+    <script>
+      function toggleBurger() {
+        var burger = document.querySelector(".navbar-burger");
+        var menu = document.querySelector("#navbarMenu");
+        burger.classList.toggle("is-active");
+        menu.classList.toggle("is-active");
+      }
+    </script>
+  </body>
+</html>

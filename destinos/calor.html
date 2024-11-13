@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escapada Perfecta</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+    />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/bulma.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/calor.css">
+    </head>
+    <body>
+    <!-- Contenedor Principal -->
+    <div class="main-container">
+        <!-- Navbar -->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../index.html">
+                    <img src="../img/Sin título-1.png" alt="Logo de Agencia de Viajes" style="max-height: 150px;">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="toggleBurger()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+    
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="../destinos.html" class="navbar-item has-text-white">Destinos</a>
+                    <a href="../actividades.html" class="navbar-item has-text-white">Actividades</a>
+                    <a href="../blog.html" class="navbar-item has-text-white">Blog</a>
+                    <a href="../hoteles.html" class="navbar-item has-text-white">Hoteles</a>
+                    <a href="../paquetes-turisticos.html" class="navbar-item has-text-white">Paquetes turisticos</a>
+                    <a href="../vuelos.html" class="navbar-item has-text-white">Vuelos</a>
+                    <a href="../login.html" class="navbar-item has-text-white">Login</a>
+                </div>
+            </div>
+        </nav>
+    
+<!-- Sección de Ejemplos de Lugares -->
+    <section class="section">
+        <div class="container">
+            <h3 class="title is-4 has-text-centered">Ejemplos de Lugares</h3>
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <a href="/destinos/cancun.html">
+                        <figure class="image">
+                            <img src="/img/playa.jpg" alt="Cancún">
+                        </figure>
+                        <p class="has-text-centered">Cancún - Paraíso de playas blancas y aguas turquesas.</p>
+                    </a>
+                </div>
+                <div class="column is-4">
+                    <a href="/img/tulum.jpg">
+                        <figure class="image">
+                            <img src="/img/tulum1.jpg" alt="Tulum">
+                        </figure>
+                        <p class="has-text-centered">Tulum - Ruinas mayas frente al mar.</p>
+                    </a>
+                </div>
+                <div class="column is-4">
+                    <a href="/destinos/desierto.html">
+                        <figure class="image">
+                            <img src="/img/desierto1.jpg" alt="Desierto de Atacama">
+                        </figure>
+                        <p class="has-text-centered">Desierto de Atacama - Paisajes desérticos únicos.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+        <!-- Footer -->
+        <div id="footer"></div>
+
+        <script src="js/footer.js"></script>
+
+        <script>
+        function toggleBurger() {
+            var burger = document.querySelector(".navbar-burger");
+            var menu = document.querySelector("#navbarMenu");
+            burger.classList.toggle("is-active");
+            menu.classList.toggle("is-active");
+        }
+        </script>
+    </body>
+</html>
+
